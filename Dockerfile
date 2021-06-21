@@ -6,7 +6,7 @@ ENV LANG=C.UTF-8
 WORKDIR /home
 
 RUN apt-get update \
-  && apt-get install -y graphviz \
+  && apt-get install -y --no-install-recommends graphviz=2.40.1-6+deb10u1 \
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
