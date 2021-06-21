@@ -1,9 +1,8 @@
 name: "Lint"
 on:
   push:
-
 jobs:
-  hadolint:
+  lint:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
